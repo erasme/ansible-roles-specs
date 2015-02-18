@@ -10,7 +10,7 @@
 
 # Install a specific version of Ansible, you can
 # omit the version to install devel (latest unstable)
-install_ansible "v1.7.1"
+install_ansible "v1.8.3"
 
 
 # An assertion which does the following:
