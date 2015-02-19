@@ -3,7 +3,7 @@
 
 # This gives you access to the custom DSL
 . "${ROLESPEC_LIB}/main"
-
+. "${ROLESPEC_TEST}/../defaults.conf"
 
 # Everything past this point is the custom DSL which is optional
 
