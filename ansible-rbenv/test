@@ -1,6 +1,5 @@
-# The file must be declared as /bin/bash
 #!/bin/bash
-
+# -*- bash -*-
 
 # This gives you access to the custom DSL
 . "${ROLESPEC_LIB}/main"
