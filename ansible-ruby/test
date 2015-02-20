@@ -12,6 +12,9 @@
 # omit the version to install devel (latest unstable)
 install_ansible ${test_ansible_version}
 
+
+ansible-galaxy install -f erasme.rbenv
+
 # An assertion which does the following:
 #   - Syntax check on the playbook
 #   - Run the playbook
