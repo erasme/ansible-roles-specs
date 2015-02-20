@@ -1,4 +1,29 @@
 ruby_version: 2.2.0
 ruby_default_version: 2.2.0
 ruby_deploy_user: foobar
+ruby_deps:
+  - autoconf
+  - automake
+  - bison 
+  - build-essential 
+  - curl 
+  - exuberant-ctags 
+  - git-core
+  - libreadline6 
+  - libreadline6-dev 
+  - libreadline-dev
+  - libsqlite3-0 
+  - libsqlite3-dev 
+  - libssl-dev 
+  - libyaml-dev 
+  - libc6-dev 
+  - libncurses5-dev
+  - libtool
+  - libxml2-dev 
+  - libxslt1-dev 
+  - openssl 
+  - sqlite3 
+  - subversion 
+  - zlib1g 
+  - zlib1g-dev 
 
