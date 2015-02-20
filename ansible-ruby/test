@@ -20,5 +20,11 @@ assert_playbook_runs
 # An assertion that re-runs the playbook checking for no changes
 assert_playbook_idempotent
 
-assert_in "$(export PATH=${HOME}/.rbenv/bin:${HOME}/.rbenv/shims:${PATH}; eval $(rbenv init -); ruby -v)" "2.2.0"
+export RBENV_ROOT="${HOME}/.rbenv"
+if [ -d "${RBENV_ROOT}" ]; then
+  export PATH="${RBENV_ROOT}/bin:${RBENV_ROOT}/shims:${PATH}"
+  eval "$(rbenv init -)"
+fi
+
+assert_in "$(ruby -v)" "2.2.0"
 
