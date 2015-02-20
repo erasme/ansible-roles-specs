@@ -20,4 +20,5 @@ assert_playbook_runs
 # An assertion that re-runs the playbook checking for no changes
 assert_playbook_idempotent
 
-assert_in "$(ruby -v)" "2.2.0"
+assert_in "$(su - foobar -c 'bundle exec ruby -v')" "2.2.0"
+
