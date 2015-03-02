@@ -9,7 +9,7 @@ if [ -n "${ROLESPEC_TRAVIS}" ] ; then
   sudo apt-get -yq install mysql-server
 
   # Write /root/.my.cnf for passwordless DB access
-  cat << END | sudo tee /root/.my.cnf > /dev/null
+  cat << END > /root/.my.cnf
 [client]
 user=root
 pass=rootpass
