@@ -14,6 +14,8 @@ if [ -n "${ROLESPEC_TRAVIS}" ] ; then
 user=root
 pass=rootpass
 END
+else
+  echo "Not TravisCI ? da fuq ?"
 fi
 
 # This gives you access to the custom DSL
