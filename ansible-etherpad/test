@@ -11,8 +11,6 @@
 # omit the version to install devel (latest unstable)
 install_ansible ${test_ansible_version}
 
-
-
 # An assertion which does the following:
 #   - Syntax check on the playbook
 #   - Run the playbook
@@ -21,7 +19,8 @@ assert_playbook_runs
 # An assertion that re-runs the playbook checking for no changes
 assert_playbook_idempotent
 
-# This is where you would add more assert statements for a "real" role
-# Check https://github.com/nickjj/rolespec/README.rst#the-test-api for details
-#
-# You are also not limited to the test API, you can write any scripts you want
+# Run again with extra vars asking to install nginx
+assert_playbook_runs --extra-var = "etherpad_path = '/etherpad/'"
+
+# Check idempotency
+assert_playbook_idempotent --extra-var = "etherpad_path = '/etherpad/'"
