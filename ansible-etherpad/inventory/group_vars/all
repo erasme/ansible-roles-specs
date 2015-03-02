@@ -1,10 +1,8 @@
 etherpad_deploy_user: travis
 etherpad_log_parent_dir: /var/log/
-etherpad_port: 9001
 etherpad_session_key: "cibbyegtub6onkovhiejcatopsyaukwy"
 etherpad_version: master
 etherpad_path: '/'
-etherpad_repos: https://github.com/ether/etherpad-lite.git
 
 etherpad_database:
   name: etherpadb
@@ -12,11 +10,3 @@ etherpad_database:
   host: localhost
   password: "etherpadpassword"
 
-etherpad_packages:
-  - gzip
-  - git-core
-  - curl
-  - python
-  - libssl-dev
-  - pkg-config
-  - build-essential
