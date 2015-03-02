@@ -7,10 +7,10 @@ etherpad_path: '/'
 etherpad_repos: https://github.com/ether/etherpad-lite.git
 
 etherpad_database:
-  name: dbname
-  user: username
-  host: dbhost
-  password: "password"
+  name: etherpadb
+  user: etherpaduser
+  host: localhost
+  password: "etherpadpassword"
 
 etherpad_packages:
   - gzip

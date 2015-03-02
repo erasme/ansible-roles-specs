@@ -1,6 +1,21 @@
 #!/bin/bash
 # -*- bash -*-
 
+# Install mysql server
+if [ -n "${ROLESPEC_TRAVIS}" ] ; then
+  sudo apt-get -qq update
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password rootpass'
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password rootpass'
+  sudo apt-get -yq install mysql-server
+
+  # Write /root/.my.cnf for passwordless DB access
+  cat << END | sudo tee /root/.my.cnf > /dev/null
+[client]
+user=root
+pass=rootpass
+END
+fi
+
 # This gives you access to the custom DSL
 . "${ROLESPEC_LIB}/main"
 . "${ROLESPEC_TEST}/../defaults.conf"
