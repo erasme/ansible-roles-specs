@@ -35,7 +35,7 @@ assert_playbook_runs
 assert_playbook_idempotent
 
 # Run again with extra vars asking to install nginx
-assert_playbook_runs --extra-vars = "etherpad_path = '/etherpad/'"
+assert_playbook_runs --extra-vars="etherpad_path = '/etherpad/'"
 
 # Check idempotency
-assert_playbook_idempotent --extra-vars = "etherpad_path = '/etherpad/'"
+assert_playbook_idempotent --extra-vars="etherpad_path = '/etherpad/'"
