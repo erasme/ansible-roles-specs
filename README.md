@@ -17,7 +17,7 @@ __Laclasse annuaire__
 [![Travis CI](http://img.shields.io/travis/erasme/ansible-laclasse-annuaire.svg?style=flat)](http://travis-ci.org/erasme/ansible-laclasse-annuaire)
 [![test-suite](http://img.shields.io/badge/ansible--roles--specs-ansible--laclasse--annuaire-blue.svg?style=flat)](https://github.com/erasme/ansible-roles-specs/tree/master/ansible-laclasse-annuaire/)
 [![Ansible
-Galaxy](http://img.shields.io/badge/galaxy-erasme.laclasse-annuaire-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/3025)
+Galaxy](http://img.shields.io/badge/galaxy-erasme.laclasse--annuaire-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/3025)
 
 __NodeJS__
 
@@ -26,25 +26,29 @@ __NodeJS__
 [![Ansible
 Galaxy](http://img.shields.io/badge/galaxy-erasme.nodejs-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2996)
 
-nginx
+__nginx__
+
 [![Travis CI](http://img.shields.io/travis/erasme/ansible-nginx.svg?style=flat)](http://travis-ci.org/erasme/ansible-ruby)
 [![test-suite](http://img.shields.io/badge/ansible--roles--specs-ansible--nginx-blue.svg?style=flat)](https://github.com/erasme/ansible-roles-specs/tree/master/ansible-nginx/)
 [![Ansible
 Galaxy](http://img.shields.io/badge/galaxy-erasme.nginx-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2964)
 
-php5-fpm
+__php5-fpm__
+
 [![Travis CI](http://img.shields.io/travis/erasme/ansible-php5-fpm.svg?style=flat)](http://travis-ci.org/erasme/ansible-php5-fpm)
 [![test-suite](http://img.shields.io/badge/ansible--roles--specs-ansible--php5--fpm-blue.svg?style=flat)](https://github.com/erasme/ansible-roles-specs/tree/master/ansible-php5-fpm/)
 [![Ansible
 Galaxy](http://img.shields.io/badge/galaxy-erasme.php5--fpm-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2971)
 
-rbenv
+__rbenv__
+
 [![Travis CI](http://img.shields.io/travis/erasme/ansible-rbenv.svg?style=flat)](http://travis-ci.org/erasme/ansible-ruby)
 [![test-suite](http://img.shields.io/badge/ansible--roles--specs-ansible--rbenv-blue.svg?style=flat)](https://github.com/erasme/ansible-roles-specs/tree/master/ansible-rbenv/)
 [![Ansible
 Galaxy](http://img.shields.io/badge/galaxy-erasme.rbenv-660198.svg?style=flat)](https://galaxy.ansible.com/list#/roles/2909)
 
-ruby-compiled
+__ruby-compiled__
+
 [![Travis CI](http://img.shields.io/travis/erasme/ansible-ruby-compiled.svg?style=flat)](http://travis-ci.org/erasme/ansible-ruby)
 [![test-suite](http://img.shields.io/badge/ansible--roles--specs-ansible--ruby--compiled-blue.svg?style=flat)](https://github.com/erasme/ansible-roles-specs/tree/master/ansible-ruby-compiled/)
 [![Ansible
