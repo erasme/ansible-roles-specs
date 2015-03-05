@@ -1,3 +1,5 @@
+ruby_deploy_user: travis
+
 laclasse:
   log_parent_dir: /var/log
   pid_dir: /var/run/
@@ -13,7 +15,7 @@ laclasse:
       api_key: 'abcd'
       api_mode: 'v3'
       bootstrap_key: http://someurl/
-      deploy_user: erasme
+      deploy_user: travis
       path: '/'
       port: 9292
       redis_root: 'someroot'
