@@ -1,0 +1,30 @@
+laclasse:
+  log_parent_dir: /var/log
+  pid_dir: /var/run/
+  smtp:
+    server: some.smtp.server
+    port: 587
+    starttls: true
+  services:
+    annuaire: 
+      description: 'Annuaire'
+      title: 'Annuaire'
+      app_id: 'ANNUAIRE'
+      api_key: 'abcd'
+      api_mode: 'v3'
+      bootstrap_key: http://someurl/
+      deploy_user: erasme
+      path: '/'
+      port: 9292
+      redis_root: 'someroot'
+      repos: https://github.com/laclasse-com/service-annuaire.git
+      version: 'master'
+      database:
+        name: annuaire
+        user: annuaireuser
+        host: localhost
+        password: "annuairepassword"
+      packages:
+        - libmysqlclient-dev
+        - libmagickcore-dev
+        - libmagickwand-dev

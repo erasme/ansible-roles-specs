@@ -1,0 +1,37 @@
+# The file must be declared as /bin/bash
+#!/bin/bash
+
+# Install mysql server
+if [ -n "${ROLESPEC_TRAVIS}" ] ; then
+  sudo apt-get -qq update
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password rootpass'
+  sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password rootpass'
+  sudo apt-get -yq install mysql-server redis-server
+
+  # Write /root/.my.cnf for passwordless DB access
+  cat << END > /root/.my.cnf
+[client]
+user=root
+pass=rootpass
+END
+fi
+
+# This gives you access to the custom DSL
+. "${ROLESPEC_LIB}/main"
+. "${ROLESPEC_TEST}/../defaults.conf"
+
+# Everything past this point is the custom DSL which is optional
+
+# Install a specific version of Ansible, you can
+# omit the version to install devel (latest unstable)
+install_ansible ${test_ansible_version}
+
+# An assertion which does the following:
+#   - Syntax check on the playbook
+#   - Run the playbook
+assert_playbook_runs
+
+# An assertion that re-runs the playbook checking for no changes
+assert_playbook_idempotent
+
+
